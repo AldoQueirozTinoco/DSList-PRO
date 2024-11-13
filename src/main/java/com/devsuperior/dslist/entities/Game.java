@@ -26,7 +26,11 @@ public class Game{
 	private String platforms;
 	private Double score;
 	private String imgUrl;
+
+	@Column(columnDefinition ="TEXT")
 	private String shortDescription;
+	
+	@Column(columnDefinition ="TEXT")
 	private String longDescription;
 	
 	
@@ -38,7 +42,6 @@ public class Game{
 	
 	public Game(long id, String title, int year, String genre, String platforms, Double score, String imgUrl,
 			String shortDescription, String longDescription) {
-		super();
 		this.id = id;
 		this.title = title;
 		this.year = year;
